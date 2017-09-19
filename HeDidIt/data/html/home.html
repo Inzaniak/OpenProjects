@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MicroBlogger</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  -->
+  <link rel="stylesheet" href="static/css/theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>MicroBlogger</h1>
+      <p>This is the SubTitle</p>
+    </div>
+    <div class="col-sm-2">
+      <!--Search-->
+      <form method="get" action="/home">
+        <label for="title">Search:</label>
+        <input class="form-control" align=left type="text" id="search" name="tfilter" autocomplete="on"></input>
+      </form>
+      <br>
+    </div>
+    <div class="col-sm-8" align=center>
+
+
+
+      <!--Send Post-->
+      {send_post}
+
+      <!--Show All-->
+      <a href="/home" class="btn btn-info btn-block" role="button">Show All</a>
+      <hr>
+
+      <!--Post-->
+      {posts}
+
+      <div class="col-sm-2"></div>
+    </div>
+
+</body>
+
+</html>
